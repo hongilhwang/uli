@@ -14,4 +14,5 @@ jobs:
       - name: Build and deploy Storybook
         uses: peaceiris/actions-gh-pages@v3
         with:
+          github_token: ${{ secrets.ULI_REPO_DEPLOY}}
           publish_dir: ./storybook-static
